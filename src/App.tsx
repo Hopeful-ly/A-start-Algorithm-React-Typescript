@@ -183,7 +183,7 @@ function App(): ReactElement {
                     }
                   }}
                 >
-                  Set End: <code>Ctr + Click</code>
+                  Set End: <code>Alt + Click</code>
                 </p>
                 <p>
                   Set Barrier: <code>Click</code>
