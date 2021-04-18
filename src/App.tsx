@@ -5,7 +5,7 @@ import Node from "./Node";
 import Grid from "./Grid";
 import PathFinding from "./PathFinding";
 var grid = new Grid(40, 40);
-var cords: cords = {
+var cords: cord = {
   start: {
     x: 2,
     y: 2,
@@ -20,22 +20,20 @@ interface point {
   x: number;
   y: number;
 }
-interface cords {
+interface cord {
   start: { x: number; y: number };
   end: { x: number; y: number };
 }
 
 function App(): ReactElement {
   const [display, setDisplay] = useState(<></>);
-  const [costView, setCostView] = useState(false);
+  const costView = useState(false);
   // const [distance, setDistance] = useState(0);
 
   const Algorithm = new PathFinding();
   useEffect(() => {
     grid.grid[cords.start.x][cords.start.y].speciality = "START";
     grid.grid[cords.end.x][cords.end.y].speciality = "END";
-    Start();
-    setDis();
   }, []);
 
   const Start = (): void => {
@@ -48,7 +46,7 @@ function App(): ReactElement {
     );
     if (Path.length !== 0) {
       grid.drawPath(Path);
-      let distance = Algorithm.getPathDist(Path);
+      // let distance = Algorithm.getPathDist(Path);
       setDis();
       return;
       // setDistance(distance);
