@@ -27,7 +27,7 @@ interface cord {
 
 function App(): ReactElement {
   const [display, setDisplay] = useState(<></>);
-  const costView = useState(false);
+  // const costView = useState(false);
   // const [distance, setDistance] = useState(0);
 
   const Algorithm = new PathFinding();
@@ -124,7 +124,7 @@ function App(): ReactElement {
                     }}
                     onDoubleClick={() => {}}
                   >
-                    {costView && Node.g + Node.h}
+                    {/* {costView && Node.g + Node.h} */}
                   </td>
                 );
               })}
