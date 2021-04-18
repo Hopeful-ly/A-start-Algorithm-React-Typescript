@@ -1,12 +1,26 @@
+@font-face {
+  font-family: QuickSand;
+  src: url("./quicksand.ttf");
+}
+
+.container {
+  margin-top: 3%;
+  height: 100%;
+}
+
 td,
 tr,
 table {
   /* border: 1px solid rgb(255, 255, 255); */
   border-collapse: collapse;
 }
+p {
+  font-family: QuickSand;
+  font-size: 30px;
+}
 
 td {
-  --table-height: 1px;
+  --table-height: 20px;
   text-align: center;
   width: var(--table-height) !important;
   height: var(--table-height) !important;
@@ -50,4 +64,22 @@ ul {
 }
 table {
   margin: auto;
+}
+
+.vertCent {
+  text-align: center;
+  height: 100px;
+  line-height: 150px;
+}
+
+code {
+  border-radius: 15px;
+  margin-right: 10px;
+}
+p {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  cursor: pointer !important;
 }
