@@ -211,7 +211,7 @@ function App(): ReactElement {
               </div>
               Website By{" "}
               <code>
-                <a href="https://github.com/VelterZI">VelterZi</a>
+                <a href="https://github.com/Hopeful-ly">Hopefully</a>
               </code>
             </div>
           </div>
